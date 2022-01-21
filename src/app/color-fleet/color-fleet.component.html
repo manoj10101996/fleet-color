@@ -15,7 +15,7 @@
         <div class="uk-child-width-1-2@s uk-child-width-1-4@m mt-3 mb-1" uk-grid="masonry: true"
             *ngIf="colorName && colorName.length >= 2 && filteredColors">
             <div class="p-1" *ngFor="let colors of filteredColors;let i = index">
-                <div class="card p-3 text-center rounded-0 border-0 twoline" (click)="copy(colors?hex)"
+                <div class="card p-3 text-center rounded-0 border-0 twoline" (click)="copy(colors)"
                     [attr.uk-tooltip]="'title: '+colors?.name+' click to copy;pos:top'"
                     [style.color]="getContrast(colors?.hex || '') > 3 ? '#fff' : '#000'"
                     [style.background]="colors?.hex">

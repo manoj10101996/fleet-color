@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
+## Code Repo
+
+[Git Repo](https://github.com/manoj10101996/fleet-color)
+
 ### Local server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -9,6 +13,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ### Amplify server (AWS deployed)
 
 Please use the below URL to access the deployed version
+
+[Hosted app - amplify](https://master.d2uvgk62efdf38.amplifyapp.com/)
 
 ### Color Data (JSON)
 
@@ -35,5 +41,7 @@ So to reduce the work load have a thresold of minimum 3 characters needed to fil
 ### Component created
 
 Color-fleet - Component
+
 Color-tool - service
+
 COLORS - Color Data

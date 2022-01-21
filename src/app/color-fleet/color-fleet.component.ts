@@ -35,16 +35,21 @@ export class ColorFleetComponent implements OnInit {
     }
   };
 
-  public getContrast(color: string) {
+  public getContrast(color: any) {
     return this.colorTool.getContrastRatio(color);
   }
 
-  public copy(text: string) {
+  public copy(color: any) {
     const event = (e: any) => {
-      e.clipboardData.setData('text/plain', text);
+      e.clipboardData.setData('text/plain', color['hex']);
       e.preventDefault();
-      window.localStorage.setItem('copied', text);
-      UIkit.notification(text + ' copied');
+      window.localStorage.setItem('copied', color['hex']);
+      UIkit.notification({
+        message: color['name'] + ' copied',
+        status: 'primary',
+        pos: 'top-right',
+        timeout: 2000,
+      });
 
       document.removeEventListener('copy', e);
     };
